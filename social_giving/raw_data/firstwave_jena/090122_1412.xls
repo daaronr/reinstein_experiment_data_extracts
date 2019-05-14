@@ -1,0 +1,40 @@
+090122_1412	1	globals	Period	NumPeriods	RepeatTreatment	NumSubj	NumGroups	Endow	RandomStage	basematchrate	basematchratepct	VolunteerPay	tempPartnerReport	tempPartnerReportEx	AuctionStop	AuctionNoStop	
+090122_1412	1	globals	1	1	0	16	16	8	0	0	0	8	0	0	0	0	
+090122_1412	1	subjects	Period	Subject	Group	Profit	TotalProfit	Participate	PartnerReceive	PartnerReport	FinalReportIdent	FinalReportAnon	MaGPartner	Treatment	Contribution	ContrEx	TimeWeiterIntroOK	TimeWeiterMeetAndGreetOK	CODE	TimeOKEnterCodeOK	TimeWeiterHonestyOK	TimeZurInforUEberBrotFdWeltInstructions1OK	TimeZumBeispielDescriptionBfdWOK	TimeWeiterExampleTreatment1OK	TimeOKExTreatment1ScreenOK	TimeWeiterExampleTreatment2OK	TimeOKExTreatment2ScreenOK	TimeOKExTreatment2reportscreenOK	TimeWeiterExampleTreatment3OK	TimeOKExTreatment3screenOK	TimeOKExTreatment3reportscreenOK	TimeWeiterExampleTreatment4OK	TimeOKExTreatment4screenOK	TimeOKExTreatment4reportscreenOK	TimeWeiterExampleTreatment5OK	TimeOKExTreatment5screenOK	TimeOKExTreatment5reportscreenOK	TimeWeiterExampleTreatment21OK	PrevDonation	PartnerKept	TimeOKExTreatment21screenOK	TimeWeiterExampleTreatment22OK	PrevDonationEx	TimeOKExTreatment22screenOK	TimeWeiterExampleTreatment23OK	TimeOKExTreatment23screenOK	TimeZumExperimentPaymentProtocolOK	TimeOKTreatment1OK	Belief_average_contr	TimeOKTreatment1BeliefElicitOK	TimeOKTreatment2OK	Belief_Partner	TimeOKTreatment2BeliefElicitOK	TimeOKTreatment3OK	TimeOKTreatment3BeliefElicitOK	TimeOKTreatment4OK	TimeOKTreatment4BeliefElicitOK	TimeOKTreatment5OK	TimeOKTreatment5BeliefElicitOK	TimeOKTreatment21OK	TimeOKTreatment22OK	TimeOKTreatment23OK	TimeOKFinalReportingAnonOK	TimeOKFinalReportingIdentifiedOK	PartnerDonation	AverageUnobserved	Profit_belief	CAREGets	TimeOKProfitDisplayOK	
+090122_1412	1	subjects	1	1	1	9	9	1	0	5	0	1	4	1	0	5	101	137	948	230	220	160	32	67	44	0	0	0	0	0	0	0	0	0	0	0	0	0	2	6	0	0	3	0	0	0	219	50	1	19	0	0	0	0	0	0	0	0	0	0	0	0	19	0	2	1	1	0	83	
+090122_1412	1	subjects	1	2	1	7	7	1	0	6	0	1	10	1	2	4	225	64	9108	230	209	209	47	69	53	0	0	0	0	0	0	0	0	0	0	0	0	0	4	4	0	0	6	0	0	0	231	57	1	32	0	0	0	0	0	0	0	0	0	0	0	0	22	0	4	1	1	2	79	
+090122_1412	1	subjects	1	3	1	3	3	1	13	0	0	0	12	2	5	3	227	132	9128	233	224	215	40	0	0	57	46	50	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	213	0	3	0	37	4.5	7	0	0	0	0	0	0	0	0	0	0	0	0	1	0	5	83	
+090122_1412	1	subjects	1	4	1	8	8	1	14	0	0	0	1	2	0	0	203	141	918	231	233	219	41	0	0	58	44	53	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	225	0	0.4	0	52	1	4	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	80	
+090122_1412	1	subjects	1	5	1	6	6	1	1	0	0	0	6	3	2	3	38	175	968	227	236	173	22	0	0	0	0	0	54	45	46	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	220	0	3.5	0	0	4	0	44	31	0	0	0	0	0	0	0	0	0	0	1	0	2	79	
+090122_1412	1	subjects	1	6	1	4	4	1	2	0	0	0	5	3	4	6	221	172	958	226	154	170	16	0	0	0	0	0	47	43	36	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	217	0	6.5	0	0	4.5	0	38	-15	0	0	0	0	0	0	0	0	0	0	1	0	4	83	
+090122_1412	1	subjects	1	7	1	4	4	1	15	0	0	0	15	4	4	5	205	94	9158	218	226	158	42	0	0	0	0	0	0	0	0	57	44	49	0	0	0	0	0	8	0	0	0	0	0	0	218	0	4	0	0	4	0	0	0	28	18	0	0	0	0	0	0	0	0	1	0	4	71	
+090122_1412	1	subjects	1	8	1	6	6	1	16	0	0	0	16	4	3	5	220	119	9168	219	225	222	47	0	0	0	0	0	0	0	0	66	27	50	0	0	0	0	0	8	0	0	0	0	0	0	222	0	1.5	0	0	2	0	0	0	31	23	0	0	0	0	0	0	0	0	1	1	3	77	
+090122_1412	1	subjects	1	9	1	10	10	1	11	0	0	0	10	5	0	1	221	13	9108	229	213	205	47	0	0	0	0	0	0	0	0	0	0	0	66	53	55	0	0	8	0	0	0	0	0	0	233	0	0.5	0	0	0	0	0	0	0	0	50	33	0	0	0	0	0	0	1	2	0	81	
+090122_1412	1	subjects	1	10	1	5	5	1	12	0	0	0	2	5	4	2	220	24	928	190	226	198	50	0	0	0	0	0	0	0	0	0	0	0	66	44	55	0	0	8	0	0	0	0	0	0	228	0	3	0	0	0	0	0	0	0	0	52	23	0	0	0	0	0	0	1	1	4	67	
+090122_1412	1	subjects	1	11	1	7	7	1	0	9	1	0	12	21	2	1	208	127	9128	233	226	104	42	0	0	0	0	0	0	0	0	0	0	0	0	0	0	66	0	8	52	0	1	0	0	0	207	0	0	0	0	0	0	0	0	0	0	0	0	43	0	0	0	-20	0	1	1	2	64	
+090122_1412	1	subjects	1	12	1	8	8	1	0	10	1	0	11	21	0	2	219	134	9118	226	99999	240	35	0	0	0	0	0	0	0	0	0	0	0	0	0	0	61	4	4	47	0	2	0	0	0	212	0	0	0	0	0	0	0	0	0	0	0	0	47	0	0	0	23	4	1	0	0	79	
+090122_1412	1	subjects	1	13	1	7	7	1	0	3	0	0	14	22	1	5	204	157	9148	231	219	198	28	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	3	0	56	3	48	0	0	212	0	0	0	0	0	0	0	0	0	0	0	0	0	37	0	0	0	5	1	0	1	76	
+090122_1412	1	subjects	1	14	1	7	7	1	0	4	0	0	13	22	2	7	221	137	9138	204	227	192	46	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	67	0	51	0	0	217	0	0	0	0	0	0	0	0	0	0	0	0	0	-6	0	0	0	0	1	1	2	69	
+090122_1412	1	subjects	1	15	1	7	7	1	0	7	0	0	7	23	1	5	224	75	978	133	218	199	50	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	4	0	0	5	0	58	46	221	0	0	0	0	0	0	0	0	0	0	0	0	0	0	45	0	0	4	1	0	1	70	
+090122_1412	1	subjects	1	16	1	0	0	1	0	8	0	0	8	23	8	5	226	130	988	230	221	201	51	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	5	0	0	5	0	65	46	216	0	0	0	0	0	0	0	0	0	0	0	0	0	0	37	0	0	3	1	0	8	78	
+090122_1412	1	subjects	1	17	1	9	9	0	0	0	0	0	0	0	0	3	0	271	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	
+090122_1412	1	summary	Period	
+090122_1412	1	summary	1	
+090122_1412	1	session	Subject	FinalProfit	ShowUpFee	ShowUpFeeInvested	MoneyAdded	MoneyToPay	MoneyEarned	
+090122_1412	1	session	1	9	0	0	0	9	9	
+090122_1412	1	session	2	7	0	0	0	7	7	
+090122_1412	1	session	3	3	0	0	0	3	3	
+090122_1412	1	session	4	8	0	0	0	8	8	
+090122_1412	1	session	5	6	0	0	0	6	6	
+090122_1412	1	session	6	4	0	0	0	4	4	
+090122_1412	1	session	7	4	0	0	0	4	4	
+090122_1412	1	session	8	6	0	0	0	6	6	
+090122_1412	1	session	9	10	0	0	0	10	10	
+090122_1412	1	session	10	5	0	0	0	5	5	
+090122_1412	1	session	11	7	0	0	0	7	7	
+090122_1412	1	session	12	8	0	0	0	8	8	
+090122_1412	1	session	13	7	0	0	0	7	7	
+090122_1412	1	session	14	7	0	0	0	7	7	
+090122_1412	1	session	15	7	0	0	0	7	7	
+090122_1412	1	session	16	0	0	0	0	0	0	
+090122_1412	1	session	17	9	0	0	0	9	9	

@@ -1,0 +1,173 @@
+{smcl}
+{* 01Mar2005}{...}
+{hline}
+help for {hi:ztree2stata}{right:Author:  Kan Takeuchi (Ver. Mar 01, 2005)}
+{hline}
+
+{title:Read data created by z-Tree}
+
+{p 8 16 16}
+{cmd:ztree2stata}
+{it:table}
+{cmd:using}
+{it:filename}
+[{cmd:,}
+	{cmdab:tr:eatment(}{it:numlist}{cmd:)}	
+	{cmdab:str:ing(}{it:string_varlist}{cmd:)}
+	{cmdab:exc:ept(}{it:namelist}{cmd:)}
+	{cmdab:sa:ve}
+	{cmdab:replace:}	
+	{cmdab:clear:}
+]
+
+
+{title:Description}
+
+{p 4 4 16}
+{cmd:ztree2stata} imports a z-Tree (Fischbacher, 1999) data file and converts it into Stata format.  Specifically ztree2stata: 
+
+{p 8 11 2}
+1. opens an MS-Excel file saved by z-Tree, 
+
+{p 8 11 2}
+2. deletes all data other than that of the specified table by {it:table},
+
+{p 8 11 2}
+3. renames variables using the variable names in z-Tree, and 
+
+{p 8 11 2}
+4. converts the data into numerical type if it is not in the {it:string_varlist}.  
+
+
+{title:Option}
+
+{p 4 4 8}
+{cmdab:tr:eatment(}{it:numlist}{cmd:)} specifies treatments that will be imported into memory.  If this option is omitted, then all treatments will be imported.  See help {help numlist} for the {cmd:numlist} specification. 
+
+{p 4 4 8}
+{cmdab:str:ing(}{it:string_varlist}{cmd:)} specifies variables that will not be  converted into numeric data. 
+
+{p 4 4 8}
+{cmdab:exc:ept(}{it:namelist}{cmd:)} specifies strings that will be used for renaming some variables. See the example below. 
+
+{p 4 4 8}
+{cmdab:sa:ve} allows Stata to make a new {it:filename}, by changing the extension from {cmd:xls} into {cmd:dta} and adding -{it:table} before the extension, and save the data in memory using the new {it:filename}.  
+
+{p 4 4 8}
+{cmdab:replace:} permits save to overwrite an existing dataset.  {cmd:replace} may not be abbreviated.  
+
+{p 4 4 8}
+{cmdab:clear:} permits the data to be loaded even if there is a dataset already in memory and even if that dataset has changed since the data were last saved.  {cmd:clear} may not be abbreviated.  
+
+
+{title:Remarks}
+
+{p 4 4 16}
+z-Tree outputs the data of all tables for each session, saving them into a tab-delimited ASCII file as {cmd:*.xls}.  There are 3 problems when you try to open the file in Stata: 
+
+{p 8 11 16}
+1. The ASCII file includes several tables (e.g., subjects, globals and session) combined together.  Thus, the desired table needs to be extracted. 
+
+{p 8 11 16}
+2. Stata interprets all variables as string because the data includes variable names.  Numeric data interpreted as string needs to be converted back into numeric data. 
+
+{p 8 11 16}
+3. If z-Tree data includes several different treatments, the size of the selected table varies with treatments and thus variables may be recorded in different columns depending on the size of the table.  
+
+{p 4 4 16}
+{cmd:ztree2stata} can handle these problems.  
+
+
+{title:Examples}
+
+{p 3 8 2}{cmd:. ztree2stata subjects using 040517XY.xls}
+
+{p 4 8 2}
+Stata reads {cmd:040517XY.xls} and keeps the data of the subjects table.  
+
+{p 4 8 2}
+{it:table} = {cmd:subjects}
+
+{p 8 8 2}
+Specify one of the tables which have been defined in z-Tree.  
+
+{p 4 8 2}
+{it:filename} = {cmd:040517XY.xls}
+
+{p 8 8 2}
+Stata looks for {cmd:040517XY.xls} in the current directory. Therefore, you need to put your data file in the current directory.  
+If the size of the file is too large, then you need to increase memory size before you use {cmd:ztree2stata}. See {cmd:[U] 7 Setting the size of memory} or help {help memory}. 
+
+
+{p 3 8 2}{cmd:. ztree2stata globals using 040517XY.xls, tr(2 4) save}
+
+{p 4 8 2}
+Stata opens {cmd:040517XY.xls} and keeps the data of the globals table in treatment 2 and 4. 
+
+{p 4 8 2}
+{it:options} = {cmd:tr(2 4)}
+
+{p 8 8 2}
+Stata reads the data of treatment 2 and 4. If the data does not include some of the specified treatments, then it returns an error.  
+
+{p 4 8 2}
+{it:options} = {cmd:save}
+
+{p 8 8 2}
+If {cmd:040517XY-globals.dta} does not exist yet, this option allows Stata to save the data in memory as {cmd:040517XY-globals.dta}; Otherwise, 
+Stata returns an error message and does not save the data in memory.  
+To overwrite the existing file, use {cmd:save} with {cmd:replace} option.  
+
+
+{p 3 16 2}{cmd:. ztree2stata subjects using 050301AB.xls, string(comments myname) except(foo goo) }
+
+{p 4 8 2}
+{it:string_varlist} = {cmd:comments myname}
+
+{p 6 8 2}
+Specify variable name(s). Stata does not encode these variables into numeric. 
+Take off ``['' and/or ``]'' from the name(s), if any. 
+
+{p 4 8 2}
+{it:options} = {cmd:except(foo goo)}
+
+{p 8 8 5}
+If you have any trouble with variable names, then you may want to define 
+an exception.  In this example, {cmd:ztree2stata} renames a variable whose 
+name  includes ``foo'' and/or ``goo'' into foo# or goo#, where # is the 
+original column number where the variable is located.  For instance, 
+suppose that you have 3 variables in a z-Tree table --- ``food,'' ``goo'' 
+and ``goodfood'' --- and that they are located in the 6th, 7th and 10th 
+column, respectively. Then, they will be renamed as ``foo6'', ``goo7'' and 
+``goo10.''  ``goodfood'' includes both of ``foo'' and ``goo.'' 
+However, since ``goo'' follows ``foo'' in the except option, `
+`goodfood'' is renamed as ``goo10.'' 
+
+
+{title:Notes}
+
+{p 4 8 5}
+If you use an array variable, the variable names includes square brackets, `` [ '' and `` ] '' which Stata cannot use  as its variable name. Thus, {cmd:ztree2stata} simply takes them away.  Example: Price[1], Price[2] and Price[3] will be converted into Price1, Price2 and Price3, respectively. 
+
+{p 4 8 5}
+{cmd:ztree2stata} cannot open Excel files.  A data file created by z-Tree is not an Excel file but a tab-delimited ASCII file, while its extension is {cmd:xls}.  Therefore, once you save a data file as an Excel file, {cmd:ztree2stata} can no longer open it. 
+
+{p 4 8 5}
+When you convert and combine several z-Tree data files into one Stata file, then you may want to use {cmd:append} after you convert all of the z-Tree files.  See help {help append}.  
+
+{p 4 8 5}
+This command is provided as it is, without any kind of warranty given.  
+
+
+{title:Author}
+
+{p 4 4 5}
+Kan Takeuchi, Department of Economics, Lorch Hall, Univ. of Michigan Ann Arbor.  Email {browse "mailto:ktakeuch@umich.edu":ktakeuch@umich.edu} if you observe any problems. 
+
+
+{title:Reference}
+
+{p 4 4 5}
+Fischbacher, U. 1999. z-Tree --- Zurich Toolbox for Readymade Economic Experiments --- Experimenter's Manual, Working Paper Nr. 21, Institute for Empirical Research in Economics, University of Zurich. 
+({browse "http://www.iew.unizh.ch/ztree/index.php":http://www.iew.unizh.ch/ztree/index.php}). 
+

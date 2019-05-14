@@ -1,0 +1,37 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{6}{c}}
+\toprule
+                &\multicolumn{2}{c}{ }  &\multicolumn{2}{c}{Add. contr.}&\multicolumn{2}{c}{Gender contr.}\\
+                &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}\\
+                &\multicolumn{1}{c}{Psn.}&\multicolumn{1}{c}{OLS}&\multicolumn{1}{c}{Psn.}&\multicolumn{1}{c}{OLS}&\multicolumn{1}{c}{Psn.}&\multicolumn{1}{c}{OLS}\\
+\midrule
+main            &           &           &           &           &           &           \\
+Pay cash (d)    &    -0.84* &    -0.84* &    -0.68* &    -0.84* &    -0.88* &    -0.89**\\
+                &   (0.33)  &   (0.34)  &   (0.31)  &   (0.34)  &   (0.38)  &   (0.34)  \\
+Pay by performance (d)&    -0.54  &    -0.54  &    -0.44  &    -0.54  &    -0.56  &    -0.58+ \\
+                &   (0.39)  &   (0.35)  &   (0.33)  &   (0.35)  &   (0.42)  &   (0.35)  \\
+Cash $\times$ performance (d)&     0.51  &     0.44  &     0.41  &     0.44  &     0.69  &     0.56  \\
+                &   (1.02)  &   (0.50)  &   (0.82)  &   (0.51)  &   (1.14)  &   (0.50)  \\
+Third charity (d)&           &           &     0.34  &     0.26  &     0.42  &     0.26  \\
+                &           &           &   (0.32)  &   (0.25)  &   (0.40)  &   (0.25)  \\
+Stake: 7.5 (d)  &           &           &    -0.18  &    -0.13  &    -0.14  &   -0.084  \\
+                &           &           &   (0.36)  &   (0.30)  &   (0.43)  &   (0.30)  \\
+Stake: 10 (d)   &           &           &    0.097  &    0.093  &     0.10  &    0.100  \\
+                &           &           &   (0.37)  &   (0.31)  &   (0.44)  &   (0.30)  \\
+Female (d)      &           &           &           &           &     0.63* &     0.53* \\
+                &           &           &           &           &   (0.32)  &   (0.25)  \\
+\midrule
+\multicolumn{7}{l}{\textit{Combined Coefficients}}\\
+Cash+perform+cash $\times$ perform &     -0.76 &     -0.94 &     -0.76 &    -0.94 &     -0.73&     -0.92 \\
+ &  (     0.32)&  (     0.34)&  (     0.32)&  (     0.35)&  (     0.31)&(     0.34)\\
+\bottomrule
+Observations    &      190  &      190  &      190  &      190  &      190  &      190  \\
+\(R^{2}\)       &           &    0.048  &           &    0.056  &           &    0.079  \\
+Pseudo \(R^{2}\)&    0.033  &           &    0.039  &           &    0.055  &           \\
+\bottomrule
+\multicolumn{7}{l}{\footnotesize Marginal effects; Standard errors in parentheses}\\
+\multicolumn{7}{l}{\footnotesize  (d) for discrete change of dummy variable from 0 to 1}\\
+\multicolumn{7}{l}{\footnotesize + p<0.10, * p<0.05, ** p<0.01}\\
+\end{tabular}
+}

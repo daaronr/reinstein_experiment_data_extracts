@@ -1,0 +1,342 @@
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.4.30)  30 OCT 2009 15:06
+entering extended mode
+ %&-line parsing enabled.
+**091030_1438.pay.tex
+(./091030_1438.pay.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, german, ngerman, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo
+File: size12.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2006/05/05 v1.1b Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/share/texmf-texlive/tex/latex/base/latin1.def
+File: latin1.def 2006/05/05 v1.1b Input encoding file
+))
+(/usr/share/texmf-texlive/tex/generic/babel/babel.sty
+Package: babel 2005/11/23 v3.8h The Babel package
+
+(/usr/share/texmf-texlive/tex/generic/babel/germanb.ldf
+Language: germanb 2004/02/19 v2.6k German support from the babel system
+
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+File: babel.def 2005/11/23 v3.8h Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+)
+\l@austrian = a dialect from \language\l@german 
+Package babel Info: Making " an active character on input line 91.
+))
+(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texmf-texlive/tex/latex/marvosym/marvosym.sty
+Package: marvosym 2006/05/11 v2.1 Martin Vogel's Symbols font definitions
+)
+(/usr/share/texmf-texlive/tex/latex/pstricks/pst-all.sty
+Package: pst-all 2006/11/07 the main pstricks tools
+
+(/usr/share/texmf-texlive/tex/latex/pstricks/pstricks.sty
+Package: pstricks 2006/08/10 v0.32 LaTeX wrapper for `PSTricks' (RN,HV)
+
+(/usr/share/texmf-texlive/tex/generic/pstricks/pstricks.tex
+`PSTricks' v1.15  <2006/12/22> (tvz)
+\pst@dima=\dimen104
+\pst@dimb=\dimen105
+\pst@dimc=\dimen106
+\pst@dimd=\dimen107
+\pst@dimg=\dimen108
+\pst@dimh=\dimen109
+\pst@hbox=\box26
+\pst@boxg=\box27
+\pst@cnta=\count88
+\pst@cntb=\count89
+\pst@cntc=\count90
+\pst@cntd=\count91
+\pst@cntg=\count92
+\pst@cnth=\count93
+\pst@toks=\toks16
+(/usr/share/texmf-texlive/tex/generic/pstricks/pstricks.con)
+\psunit=\dimen110
+\psxunit=\dimen111
+\psyunit=\dimen112
+\pslinewidth=\dimen113
+\pst@customdefs=\toks17
+\pslinearc=\dimen114
+\everypsbox=\toks18
+\psframesep=\dimen115
+\pslabelsep=\dimen116
+\psk@shift=\dimen117
+\pst@shift=\dimen118
+\theoverlaybox=\box28
+)
+File: pstricks.tex 2006/12/22 v1.15 `PSTricks' (tvz)
+
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Package option `override' ignored on input line 216.
+Package xcolor Info: Driver file: dvips.def on input line 225.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+(/usr/share/texmf-texlive/tex/latex/pstricks/pst-plot.sty
+Package: pst-plot 2004/07/15 package wrapper for pst-plot.tex
+
+(/usr/share/texmf-texlive/tex/generic/pstricks/pst-plot.tex
+ v97 patch 2, 1999/12/12
+(/usr/share/texmf-texlive/tex/generic/multido/multido.tex
+ v1.41, 2004/05/18 <tvz>
+\multido@count=\count94
+\multidocount=\count95
+\multido@stuff=\toks19
+))
+File: pst-plot.tex 2004/05/18 1.41 `pst-plot' (tvz)
+)
+(/usr/share/texmf-texlive/tex/latex/pstricks/pst-tree.sty
+Package: pst-tree 2004/07/15 package wrapper for pst-tree.tex
+
+(/usr/share/texmf-texlive/tex/generic/pstricks/pst-tree.tex
+(/usr/share/texmf-texlive/tex/generic/pstricks/pst-node.tex
+ v97 patch 11, 2000/11/09
+\psrow=\count96
+\pscol=\count97
+\psmatrixcnt=\count98
+\psrowsep=\skip43
+\pscolsep=\skip44
+)  v97 patch 6, 2004/07/24
+\pstree@rootbox=\box29
+\pstree@box=\box30
+\psnodecnt=\count99
+\pstreelevel=\count100
+\pstreecnt=\count101
+\pstree@cnt=\count102
+\pstree@stop=\count103
+)
+File: pst-tree.tex 2004/07/24 97 patch 6 `pst-tree' (tvz)
+)
+(/usr/share/texmf-texlive/tex/latex/pstricks/pst-node.sty
+Package: pst-node 2006/01/01 package wrapper for pst-node.tex
+
+(/usr/share/texmf-texlive/tex/generic/pstricks/pst-node.tex
+ v97 patch 11, 2000/11/09)
+File: pst-node.tex 2000/11/09 97 patch 11 `pst-node' (tvz)
+)
+(/usr/share/texmf-texlive/tex/latex/pst-3d/pst-3d.sty
+Package: pst-3d 2005/09/02 package wrapper for pst-3d.tex (hv)
+
+(/usr/share/texmf-texlive/tex/generic/pst-3d/pst-3d.tex
+(/usr/share/texmf-texlive/tex/latex/xkeyval/pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+
+(/usr/share/texmf-texlive/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2006/11/18 v2.5f package option processing (HA)
+
+(/usr/share/texmf-texlive/tex/latex/xkeyval/xkeyval.tex
+\XKV@toks=\toks20
+\XKV@depth=\count104
+File: xkeyval.tex 2006/11/18 v2.5f key=value parser (HA)
+
+(/usr/share/texmf-texlive/tex/latex/xkeyval/keyval.tex))))
+`PST-3d' v1.00, 2005/09/03 (tvz))
+File: pst-3d.tex 2005/09/03 v1.00 `PST-3d' (tvz)
+)
+(/usr/share/texmf-texlive/tex/latex/pst-grad/pst-grad.sty
+Package: pst-grad 2004/07/15 package wrapper for pst-grad.tex (hv)
+
+(/usr/share/texmf-texlive/tex/generic/pst-grad/pst-grad.tex
+`pst-plot' v1.05, 2006/11/04 (tvz,dg,hv))
+File: pst-grad.tex 2006/11/04 1.05 `pst-grad' (tvz)
+)
+(/usr/share/texmf-texlive/tex/latex/pst-coil/pst-coil.sty
+Package: pst-coil 2006/08/11 package wrapper for pst-coil.tex (hv)
+
+(/usr/share/texmf-texlive/tex/generic/pst-coil/pst-coil.tex  v1.05, 2006/11/04)
+File: pst-coil.tex 2006/11/05 v1.00 `pst-coil' (tvz)
+) (/usr/share/texmf-texlive/tex/latex/pst-text/pst-text.sty
+Package: pst-text 2006/01/01 package wrapper for pst-text.tex (hv)
+
+(/usr/share/texmf-texlive/tex/generic/pst-text/pst-text.tex
+ v1.00, 2006/11/05(tvz,hv))
+File: pst-text.tex 2006/11/05 1.00 `pst-text' (tvz)
+)
+(/usr/share/texmf-texlive/tex/latex/pst-eps/pst-eps.sty
+Package: pst-eps 2005/05/20 package wrapper for pst-eps.tex (hv)
+
+(/usr/share/texmf-texlive/tex/generic/pst-eps/pst-eps.tex  v1.00, 2006/11/04
+\pst@epsout=\write3
+\pst@tempout=\write4
+)
+File: pst-eps.tex 2006/11/04 1.00 `pst-eps' (tvz)
+)
+(/usr/share/texmf-texlive/tex/latex/pst-fill/pst-fill.sty
+Package: pst-fill 2005/09/13 package wrapper for pst-fill.tex (hv)
+
+(/usr/share/texmf-texlive/tex/generic/pst-fill/pst-fill.tex
+`PST-Fill' v1.00, 2005/09/12 (tvz,dg,hv)
+\pst@fillbox=\box31
+)
+File: pst-fill.tex 2005/09/12 v1.00 `PST-fill' (tvz,dg)
+)
+(/usr/share/texmf-texlive/tex/generic/multido/multido.sty
+Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
+
+))
+(/usr/share/texmf-texlive/tex/latex/datetime/datetime.sty
+Package: datetime 2006/12/05 v2.49 Date Time Package
+
+(/usr/share/texmf-texlive/tex/latex/fmtcount/fmtcount.sty
+Package: fmtcount 2007/01/06 v1.06
+
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@padzeroesN=\count105
+
+No configuration file fmtcount.cfg found.
+\@DT@modctr=\count106
+\@ordinalctr=\count107
+\@orgargctr=\count108
+\@strctr=\count109
+\@tmpstrctr=\count110
+\@DT@loopN=\count111
+\@DT@X=\count112
+)
+\@day=\count113
+\@month=\count114
+\@year=\count115
+Package datetime Info: No datetime.cfg file found, using default settings on in
+put line 151.
+\@dtctr=\count116
+\dayofyear=\count117
+\dayofweek=\count118
+LaTeX Info: Redefining \today on input line 414.
+ (/usr/share/texmf-texlive/tex/latex/datetime/dt-austrian.def
+File: dt-austrian.def 2004/10/31
+LaTeX Info: Redefining \dateaustrian on input line 51.
+)
+(/usr/share/texmf-texlive/tex/latex/datetime/dt-german.def
+File: dt-german.def 2004/10/31
+LaTeX Info: Redefining \dategerman on input line 51.
+)
+\c@HOUR=\count119
+\c@HOURXII=\count120
+\c@MINUTE=\count121
+\c@TOHOUR=\count122
+\c@TOMINUTE=\count123
+)
+(./091030_1438.pay.aux)
+\openout1 = `091030_1438.pay.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 41.
+ (/usr/share/texmf-texlive/tex/latex/psnfss/t1ppl.fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 41.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 41.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 41.
+LaTeX Font Info:    Try loading font information for U+mvs on input line 42.
+
+(/usr/share/texmf-texlive/tex/latex/marvosym/umvs.fd) [1
+
+
+] [2
+
+
+] [3
+
+] [4
+
+] [5
+
+]
+[6
+
+] [7
+
+] [8
+
+] [9
+
+] [10
+
+] [11
+
+] [12
+
+] [13
+
+] [14
+
+] [15
+
+] [16
+
+] [17
+
+] [18
+
+] [19
+
+]
+(./091030_1438.pay.aux) ) 
+Here is how much of TeX's memory you used:
+ 4134 strings out of 95071
+ 50057 string characters out of 1182703
+ 136027 words of memory out of 1500000
+ 7230 multiletter control sequences out of 10000+50000
+ 10972 words of font info for 29 fonts, out of 1200000 for 2000
+ 28 hyphenation exceptions out of 8191
+ 39i,9n,39p,298b,275s stack positions out of 5000i,500n,6000p,200000b,5000s
+
+Output written on 091030_1438.pay.dvi (19 pages, 31100 bytes).

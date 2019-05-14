@@ -1,0 +1,66 @@
+
+Treatment =
+       if ((Subject==1|Subject==2) , 11 ,
+       if ((Subject==3|Subject==4) , 12 ,
+       if ((Subject==5|Subject==6) , 13 , 
+       if ((Subject==7|Subject==8) , 14 ,
+       if ((Subject==9|Subject==10) , 15,
+       if ((Subject==11|Subject==12) , 21 ,
+       if ((Subject==13|Subject==14) , 22 ,
+       if ((Subject==15|Subject==16) , 23 , 0))))))));
+
+
+PartnerReceive =
+       if (Subject==3 , 13 ,
+       if (Subject==4 , 14 ,
+       if (Subject==5 , 1 ,
+       if (Subject==6 , 2 ,
+       if (Subject==7 , 15 ,
+       if (Subject==8 , 16 ,
+       if (Subject==9 , 11 ,
+       if (Subject==10 , 12,  0))))))));
+
+PartnerReport=
+       if (Subject==13 , 3 ,
+       if (Subject==14 , 4 ,
+       if (Subject==1 , 5 ,
+       if (Subject==2 , 6 ,
+       if (Subject==15 , 7 ,
+       if (Subject==16 , 8 ,
+       if (Subject==11 , 9 ,
+       if (Subject==12 , 10,  0))))))));
+
+FinalReportIdent=
+    if((Subject==11|Subject==12) , 1 ,0);
+
+FinalReportAnon=
+    if((Subject==1|Subject==2) , 1 ,0);
+
+
+//Meet and Greet Matchings
+MaGPartner=
+  if (Subject==1 , 4 ,
+  if (Subject==2 , 3 ,
+  if (Subject==3 , 2 ,
+  if (Subject==4 , 1 ,
+  if (Subject==5 , 6 ,
+  if (Subject==6 , 5 ,
+  if (Subject==7 , 15 ,
+  if (Subject==8 , 16 ,
+  if (Subject==9 ,11 ,
+  if (Subject==10 , 12 ,
+ if (Subject==11 , 9,
+ if (Subject==12 , 10, 
+ if (Subject==13 , 14, 
+ if (Subject==14 , 13, 
+ if (Subject==15 , 7,
+ if (Subject==16 , 8
+, 0))))))))))))))));
+
+
+
+Contribution=0;
+
+ContrEx=round(random()*Endow,1.0);
+
+

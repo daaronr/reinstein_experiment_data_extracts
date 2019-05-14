@@ -1,0 +1,82 @@
+#!/usr/bin/php5
+<?php
+if ($_SERVER["argc"] <1) {
+	echo "please call me with a payment file as an argument";
+	die;
+}
+$main = $_SERVER["argv"][1];
+$experiment = explode(".",$main);
+$experiment = str_replace("_","-",$experiment[0]);
+$lines=file($main,FILE_IGNORE_NEW_LINES);
+$head = explode("\t",$lines[0]);
+$Computer = array_search("Computer",$head);
+$Name = array_search("Name",$head);
+$Profit = array_search("Profit",$head);
+$tex = fopen ($main.".tex","w");
+fwrite($tex,"\\documentclass[12pt]{article}
+\\usepackage[latin1]{inputenc}
+\\usepackage[german]{babel}
+\\usepackage[T1]{fontenc}
+%%\\usepackage{type1ec}
+\\usepackage{marvosym,pst-all}
+\\usepackage{datetime}
+\\sloppy
+\\begin{document}
+\\pagestyle{empty}
+\\def\\BB{\\clearpage
+\\rput(0,-10.5mm){%
+\\psset{linewidth=.3mm}
+%%\\rput[b](10mm,1.2mm){\\epsfig{file=/home/oliver/texmf/eps/hanfried.eps, width=20mm}}%
+%%\\psline(20mm,0)%
+%%\\rput[t](10mm,-1.2mm){{{\\renewcommand{\\rmdefault}{ppl}\\rmfamily\\scriptsize seit 1558}}}%
+%%\\rput[bl](0,-21mm){\\scriptsize\\sffamily Prof.~Kirchkamp $\\cdot$ Universität Jena $\\cdot$ D-07743 Jena}%
+\\rput(77mm,0){%
+  \\psline(-20mm,0)(81.5mm,0)%
+  \\rput(0,-1mm){\\psline[linewidth=2mm](0,0)(81.5mm,0)}%
+  \\rput[t](40.05mm,6mm){\\renewcommand{\\rmdefault}{ppl}\\rmfamily\\normalsize%
+  \\begin{tabular}[t]{l}\\Large Universität Jena\\\\[1ex]Wirtschaftswissenschaftliche Fakultät\\\\
+       Experimentallabor\\end{tabular}}}}}%
+\\def\AA#1#2#3{
+\\BB
+\\vspace*{3cm}
+\\paragraph*{\\Large BELEG A}
+\\paragraph*{Quittung: Teilnahme an einem Laborexperiment}\mbox{}
+\\[\\begin{tabular}{l|l|l|r}
+ Experiment & Rechner & Name (bitte eintragen) & Auszahlung \\\\ \\hline
+ experiment & #1 &  & #3 \\EUR\\end{tabular}\\]
+
+Hiermit bestätige ich, dass ich den o.g. Betrag in bar ausgezahlt
+bekommen habe. Der Betrag wird brutto ausbezahlt. Eventuelle Steuern
+und sonstige Abgaben sind vom Empfänger des Geldbetrages
+(Experimentteilnehmer) selbst zu entrichten.
+
+\\vspace{3cm} Jena, \\today \\hfill  \\hfill  \\newline
+\\rput(90mm,0){(Unterschrift)}}
+
+");
+
+$Total=0;
+$num=count($lines);
+
+fwrite($tex,"\\BB\\\\[3cm]\\today --- \\currenttime\\\\[2ex]\\begin{tabular}{lllr}
+ Experiment & Rechner & Subjekt No & Auszahlung \\\\ \\hline");
+for ($i=1;$i<$num-1;++$i) {
+    $head = explode("\t",$lines[$i]);
+    fwrite ($tex,"$experiment &".$head[$Computer]."&" .$head[$Name]."&".$head[$Profit]."\\EUR\\\\\n");
+    $Total += $head[$Profit];
+}
+fwrite($tex,"\\hline &&& ".sprintf("%.2f",$Total)."\\EUR\\end{tabular}\\clearpage");
+
+for ($i=1;$i<$num-1;++$i) {
+    $head = explode("\t",$lines[$i]);
+    fwrite ($tex,"\\AA{".$head[$Computer]."}{".$head[$Name]."}{".$head[$Profit]."}\n");
+}
+
+fwrite($tex,"\\end{document}");
+
+
+system ("latex $main.tex");
+system ("dvips $main.dvi");
+system ("okular $main.ps");
+
+?>

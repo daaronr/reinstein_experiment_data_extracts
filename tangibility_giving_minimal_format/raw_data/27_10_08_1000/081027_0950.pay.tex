@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[german]{babel}
+\usepackage[T1]{fontenc}
+%\usepackage{type1ec}
+\usepackage{marvosym,pst-all}
+\usepackage{datetime}
+\sloppy
+\begin{document}
+\pagestyle{empty}
+\def\BB{\clearpage
+\rput(0,-10.5mm){%
+\psset{linewidth=.3mm}
+%%\rput[b](10mm,1.2mm){\epsfig{file=/home/oliver/texmf/eps/hanfried.eps, width=20mm}}%
+%%\psline(20mm,0)%
+%%\rput[t](10mm,-1.2mm){{{\renewcommand{\rmdefault}{ppl}\rmfamily\scriptsize seit 1558}}}%
+%%\rput[bl](0,-21mm){\scriptsize\sffamily Prof.~Kirchkamp $\cdot$ Universität Jena $\cdot$ D-07743 Jena}%
+\rput(77mm,0){%
+  \psline(-20mm,0)(81.5mm,0)%
+  \rput(0,-1mm){\psline[linewidth=2mm](0,0)(81.5mm,0)}%
+  \rput[t](40.05mm,6mm){\renewcommand{\rmdefault}{ppl}\rmfamily\normalsize%
+  \begin{tabular}[t]{l}\Large Universität Jena\\[1ex]Wirtschaftswissenschaftliche Fakultät\\
+       Experimentallabor\end{tabular}}}}}%
+\def\AA#1#2#3{
+\BB
+\vspace*{3cm}
+\paragraph*{Quittung: Teilnahme an einem Laborexperiment}\mbox{}
+\[\begin{tabular}{l|l|l|r}
+ Experiment & Rechner & Name & Auszahlung \\ \hline
+ 081027_0950 & #1 & #2 & #3 \EUR\end{tabular}\]
+
+Hiermit bestätige ich, dass ich den o.g. Betrag in bar ausgezahlt
+bekommen habe. Der Betrag wird brutto ausbezahlt. Eventuelle Steuern
+und sonstige Abgaben sind vom Empfänger des Geldbetrages
+(Experimentteilnehmer) selbst zu entrichten.
+
+\vspace{3cm} Jena, \today \hfill #2 \hfill }
+
+\AA{client06}{26, 6}{10.00}
+\AA{client09}{24, 9}{7.00}
+\AA{client08}{24, 8}{5.00}
+\AA{client12}{25, 12}{3.50}
+\AA{client07}{23, 7}{4.00}
+\AA{client10}{25, 10}{3.00}
+\AA{client17}{25, 17}{4.00}
+\AA{client13}{22, 13}{2.50}
+\AA{client14}{22, 14}{0.00}
+\AA{client18}{25, 18}{5.00}
+\BB\\[3cm]\today --- \currenttime\\[2ex]\begin{tabular}{lllr}
+ Experiment & Rechner & Name & Auszahlung \\ \hline081027_0950 &client06&26, 6&10.00\EUR\\
+081027_0950 &client09&24, 9&7.00\EUR\\
+081027_0950 &client08&24, 8&5.00\EUR\\
+081027_0950 &client12&25, 12&3.50\EUR\\
+081027_0950 &client07&23, 7&4.00\EUR\\
+081027_0950 &client10&25, 10&3.00\EUR\\
+081027_0950 &client17&25, 17&4.00\EUR\\
+081027_0950 &client13&22, 13&2.50\EUR\\
+081027_0950 &client14&22, 14&0.00\EUR\\
+081027_0950 &client18&25, 18&5.00\EUR\\
+\hline &&& 44.00\EUR\end{tabular}\end{document}
